@@ -1,0 +1,195 @@
+.register{
+    height:80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+   
+    background-color: rgba(255, 255, 255, 0.354);
+    backdrop-filter: blur(8px);
+    border-radius: 5%;
+}
+.register h2{
+    margin-top: 1.5vw;
+}
+
+.register-elements{
+    display: flex;
+    height: 100%;
+   width: 70%;
+   padding: 2vw 2vw;
+
+   justify-content: center;
+}
+.register-elements label{
+    font-size: 1.5vw;
+    padding: 4px 4px;
+    margin:  0 1.3vw;
+    color: rgba(0, 0, 0, 0.754)
+}
+.register-elements input{
+    font-size: 1.3vw;
+    margin: 1vw 1.3vw;
+    font-weight: 200;
+    padding: 6px 4px;
+    
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+}
+
+.address #img{
+    color: rgba(0, 0, 0, 0.754)
+}
+
+.register .register-elements button{
+    height: 2.8vw;
+    width: 10vw;
+    margin: 1vw 2vw;
+    border-radius: 4px 30px 30px 2px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; 
+}
+.register-elements button:hover{
+    
+    animation: change 2s ease-out 0.2s forwards;
+}
+@keyframes change {
+    0%{box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.809);
+        transform: scale(1.1);}
+    50%{box-shadow: 0 0 30px -4px rgba(0, 0, 0, 0.921);
+    transform: scale(1.2);}
+    100%{box-shadow: 0 0 45px -6px rgba(0, 0, 0, 0.965);
+    transform: scale(1.3);}
+}
+
+.register .address p{
+    color: rgba(0, 0, 0, 0.754);
+}
+
+.link{
+    color: rgba(0, 0, 0, 0.754);
+}
+
+@media (max-width:1200px) {
+    .register{
+        width: 80%;
+        margin-left: 8vw;
+    }
+    .register h2{
+        font-size: 8vw;
+        }
+        .details label{
+            font-size: 4vw;
+         }
+         .address label{
+             font-size: 4vw;
+         }
+         .register-elements{
+             margin-top: 2vw;
+         }
+         .register-elements  input{
+             font-size: 2vw;
+             margin: 1.2vw 1.2vw;
+             }
+         .register .register-elements button{
+             font-size: 4vw;
+             height: 7.8vw;
+             width: 18vw;
+             margin: 3vw 4.5vw;
+             border-radius: 4px 30px 30px 2px;
+         }
+         .register p{
+             font-size: 4vw;
+         }
+         .link{
+             font-size: 4vw;
+         }
+}
+
+@media (max-width:850px) {
+    .register{
+        width: 80%;
+        margin-left: 8vw;
+    }
+    .register h2{
+        font-size: 8.9vw;
+        }
+        .details label{
+            font-size: 4.8vw;
+         }
+         .address label{
+             font-size: 4.8vw;
+         }
+         .register-elements{
+             margin-top: 2vw;
+         }
+         .register-elements  input{
+             font-size: 2.8vw;
+             margin: 1.2vw 2.2vw;
+             width: 34vw;
+             height: 6vw;
+             }
+         .register .register-elements button{
+             font-size: 4vw;
+             height: 7.8vw;
+             width: 18vw;
+             margin: 3vw 4.5vw;
+             border-radius: 4px 30px 30px 2px;
+         }
+         .register p{
+             font-size: 4vw;
+         }
+         .link{
+             font-size: 4vw;
+         }
+         
+}
+
+@media (max-width:600px) {
+    .register{
+       width: 80%;
+       height: 70%;
+       margin-left: 12vw;
+       margin-top: 15vw;
+    }
+    .register h2{
+    font-size: 10vw;
+    }
+    .details label{
+       font-size: 6.5vw;
+    }
+    .address label{
+        font-size: 6.5vw;
+    }
+    .register-elements{
+        margin-top: 2vw;
+    }
+    .register-elements  input{
+        font-size: 4vw;
+        margin: 1.2vw 1.2vw;
+        height: 10vw;
+        }
+    .register .register-elements button{
+        font-size: 5vw;
+        height: 9.8vw;
+        width: 22vw;
+        margin: 3vw 4.5vw;
+        border-radius: 4px 30px 30px 2px;
+    }
+    .register p{
+        font-size: 6vw;
+    }
+    .link{
+        font-size: 6vw;
+    }
+    
+}
